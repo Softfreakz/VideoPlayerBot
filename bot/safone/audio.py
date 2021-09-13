@@ -97,7 +97,7 @@ async def play(client, m: Message):
             await group_call.join(chat_id)
             await group_call.start_audio(audio, repeat=False)
             AUDIO_CALL[chat_id] = group_call
-            await msg.edit(f"▶️ **Started [Audio Streaming](https://t.me/AsmSafone) !**", disable_web_page_preview=True)
+            await msg.edit(f"▶️ **Started [Audio Streaming](https://t.me/Softfreakz) !**", disable_web_page_preview=True)
         except Exception as e:
             await msg.edit(f"❌ **An Error Occoured !** \n\nError: `{e}`")
 
@@ -111,6 +111,6 @@ async def restart(client, m: Message):
     await sleep(3)
     os.execl(sys.executable, sys.executable, *sys.argv)
     try:
-        await k.edit("✅ **Restarted Successfully! \nJoin @AsmSafone For More!**")
+        await k.edit("✅ **Restarted Successfully! \nFor any Help/Support contact @Softfreakz !**")
     except:
         pass
