@@ -25,7 +25,7 @@ from pyrogram.errors import MessageNotModified
 from bot.safone.extras import USERNAME
 
 CHAT_ID = Config.CHAT_ID
-HOME_TEXT = "👋🏻 **Hi [{}](tg://user?id={})**, \n\nI'm **Video Player Bot**. \nI Can Stream Lives, Radios, YouTube Videos & Telegram Video Files On Voice Chat Of Telegram Channels & Groups 😉! \n\n**Made With ❤️ By @ImSafone!** 👑"
+HOME_TEXT = "👋🏻 **Hi [{}](tg://user?id={})**, \n\nI'm **Softfreakz Video Player Bot**. \nI Can Stream Lives, Radios, YouTube Videos & Telegram Video Files 😉! \n\n**My Master is @Softfreakz** 👑"
 HELP_TEXT = """
 🏷️ --**Setting Up**-- :
 
@@ -47,8 +47,8 @@ HELP_TEXT = """
 \u2022 `/endstream` - stop streaming & left vc
 \u2022 `/restart` - update and restart the bot
 
-© **Powered By** : 
-**@AsmSafone | @SafoTheBot** 👑
+© **Created By My Master** : 
+**@Softfreakz** 👑
 """
 
 
@@ -57,12 +57,12 @@ async def cb_handler(client: Client, query: CallbackQuery):
     if query.data=="help":
         buttons = [
             [
-                InlineKeyboardButton("CHANNEL", url="https://t.me/AsmSafone"),
-                InlineKeyboardButton("SUPPORT", url="https://t.me/SafoTheBot"),
+                InlineKeyboardButton("Contact My Master", url="https://t.me/Softfreakz"),
+                InlineKeyboardButton("Treat Me a Biriyani! 😋", url="https://www.buymeacoffee.com/softfreakz"),
             ],
             [
-                InlineKeyboardButton("MORE BOTS", url="https://t.me/AsmSafone/173"),
-                InlineKeyboardButton("SOURCE CODE", url="https://github.com/AsmSafone/VideoPlayerBot"),
+                InlineKeyboardButton("Sonu Sood Charity 🙏", url="https://soodcharityfoundation.org/"),
+                InlineKeyboardButton("For Any Help", url="https://t.me/Softfreakz"),
             ],
             [
                 InlineKeyboardButton("BACK HOME", callback_data="home"),
@@ -84,15 +84,15 @@ async def cb_handler(client: Client, query: CallbackQuery):
                 InlineKeyboardButton("SEARCH INLINE", switch_inline_query_current_chat=""),
             ],
             [
-                InlineKeyboardButton("CHANNEL", url="https://t.me/AsmSafone"),
-                InlineKeyboardButton("SUPPORT", url="https://t.me/SafoTheBot"),
+                InlineKeyboardButton("Contact My Master", url="https://t.me/Softfreakz"),
+                InlineKeyboardButton("Treat Me a Biriyani! 😋", url="https://www.buymeacoffee.com/softfreakz"),
             ],
             [
-                InlineKeyboardButton("MORE BOTS", url="https://t.me/AsmSafone/173"),
-                InlineKeyboardButton("SOURCE CODE", url="https://github.com/AsmSafone/VideoPlayerBot"),
+                InlineKeyboardButton("Sonu Sood Charity 🙏", url="https://soodcharityfoundation.org/"),
+                InlineKeyboardButton("For Any Help", url="https://t.me/Softfreakz"),
             ],
             [
-                InlineKeyboardButton("❔ HOW TO USE ❔", callback_data="help"),
+                InlineKeyboardButton("Bot Instructions!", callback_data="help"),
             ]
             ]
         reply_markup = InlineKeyboardMarkup(buttons)
@@ -119,15 +119,15 @@ async def start(client, message):
                 InlineKeyboardButton("SEARCH INLINE", switch_inline_query_current_chat=""),
             ],
             [
-                InlineKeyboardButton("CHANNEL", url="https://t.me/AsmSafone"),
-                InlineKeyboardButton("SUPPORT", url="https://t.me/SafoTheBot"),
+                InlineKeyboardButton("Contact My Master", url="https://t.me/Softfreakz"),
+                InlineKeyboardButton("Treat Me a Biriyani! 😋", url="https://www.buymeacoffee.com/softfreakz"),
             ],
             [
-                InlineKeyboardButton("MORE BOTS", url="https://t.me/AsmSafone/173"),
-                InlineKeyboardButton("SOURCE CODE", url="https://github.com/AsmSafone/VideoPlayerBot"),
+                InlineKeyboardButton("Sonu Sood Charity 🙏", url="https://soodcharityfoundation.org/"),
+                InlineKeyboardButton("For Any Help", url="https://t.me/Softfreakz"),
             ],
             [
-                InlineKeyboardButton("❔ HOW TO USE ❔", callback_data="help"),
+                InlineKeyboardButton("Bot Instructions!", callback_data="help"),
             ]
             ]
     reply_markup = InlineKeyboardMarkup(buttons)
@@ -137,12 +137,12 @@ async def start(client, message):
 async def help(client, message):
     buttons = [
             [
-                InlineKeyboardButton("CHANNEL", url="https://t.me/AsmSafone"),
-                InlineKeyboardButton("SUPPORT", url="https://t.me/SafoTheBot"),
+                InlineKeyboardButton("Contact My Master", url="https://t.me/Softfreakz"),
+                InlineKeyboardButton("Treat Me a Biriyani! 😋", url="https://www.buymeacoffee.com/softfreakz"),
             ],
             [
-                InlineKeyboardButton("MORE BOTS", url="https://t.me/AsmSafone/173"),
-                InlineKeyboardButton("SOURCE CODE", url="https://github.com/AsmSafone/VideoPlayerBot"),
+                InlineKeyboardButton("Sonu Sood Charity 🙏", url="https://soodcharityfoundation.org/"),
+                InlineKeyboardButton("For Any Help", url="https://t.me/Softfreakz"),
             ],
             [
                 InlineKeyboardButton("BACK HOME", callback_data="home"),
