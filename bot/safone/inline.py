@@ -27,11 +27,11 @@ REPLY_MESSAGE = Config.REPLY_MESSAGE
 
 buttons = [
             [
-                InlineKeyboardButton("CHANNEL", url="https://t.me/AsmSafone"),
-                InlineKeyboardButton("SUPPORT", url="https://t.me/SafoTheBot"),
+                InlineKeyboardButton("Contact Me", url="https://t.me/Softfreakz"),
+                InlineKeyboardButton("Treat Me With a Biriyani! 😋", url="https://https://www.buymeacoffee.com/softfreakz"),
             ],
             [
-                InlineKeyboardButton("🤖 MAKE YOUR OWN BOT 🤖", url="https://heroku.com/deploy?template=https://github.com/AsmSafone/VideoPlayerBot"),
+                InlineKeyboardButton("Donate to Sonu Sood Charity! 🙏", url="https://soodcharityfoundation.org/"),
             ]
          ]
 
@@ -41,8 +41,8 @@ async def search(client, query):
     if query.query == "SAF_ONE":
         answers.append(
             InlineQueryResultArticle(
-                title="Deploy Own Video Player Bot",
-                input_message_content=InputTextMessageContent(f"{REPLY_MESSAGE}\n\n<b>© Powered By : \n@AsmSafone | @SafoTheBot 👑</b>", disable_web_page_preview=True),
+                title="Softfreakz",
+                input_message_content=InputTextMessageContent(f"{REPLY_MESSAGE}\n\n<b>© Created By : \n@Softfreakz 😉</b>", disable_web_page_preview=True),
                 reply_markup=InlineKeyboardMarkup(buttons)
                 )
             )
